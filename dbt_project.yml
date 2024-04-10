@@ -36,6 +36,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   airbnb:
-    # Applies to all files under models/example/
-    example:
-      +materialized: table
+    staging:
+      schema: staging
+      snowflake_Warehouse: COMPUTE_WH
+      materialized: view
+    prod:
+      schema: prod
+      snowflake_Warehouse: COMPUTE_WH
+      materialized: table
