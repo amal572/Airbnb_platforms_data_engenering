@@ -5,10 +5,10 @@ version: '1.0.0'
 profile: 'default'
 
 # Directories where dbt looks for different types of files
-source-paths: ["models"]  # Path to your dbt models
+model-paths: ["models"]  # Path to your dbt models
 analysis-paths: ["analysis"]  # Path to analysis files
 test-paths: ["tests"]  # Path to test files
-data-paths: ["data"]  # Path to seed data files
+seed-paths: ["data"]  # Path to seed data files
 macro-paths: ["macros"]  # Path to macro files
 snapshot-paths: ["snapshots"]  # Path to snapshot files
 
