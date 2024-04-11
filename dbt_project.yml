@@ -1,46 +1,30 @@
-
-# Name your project! Project names should contain only lowercase characters
-# and underscores. A good package name should reflect your organization's
-# name or the intended use of these models
 name: 'airbnb'
 version: '1.0.0'
 
-# This setting configures which "profile" dbt uses for this project.
+# Set the profile to use for this project. Make sure 'default' is correctly configured in profiles.yml.
 profile: 'default'
 
-# These configurations specify where dbt should look for different types of files.
-# The `source-paths` config, for example, states that models in this project can be
-# found in the "models/" directory. You probably won't need to change these!
-source-paths: ["models"]
-analysis-paths: ["analysis"]
-test-paths: ["tests"]
-data-paths: ["data"]
-macro-paths: ["macros"]
-snapshot-paths: ["snapshots"]
+# Directories where dbt looks for different types of files
+model-paths: ["models"]  # Path to your dbt models
+analysis-paths: ["analysis"]  # Path to analysis files
+test-paths: ["tests"]  # Path to test files
+seed-paths: ["data"]  # Path to seed data files
+macro-paths: ["macros"]  # Path to macro files
+snapshot-paths: ["snapshots"]  # Path to snapshot files
 
-target-path: "target"  # directory which will store compiled SQL files
-clean-targets:         # directories to be removed by `dbt clean`
+target-path: "target"  # Directory to store compiled SQL files
+clean-targets:         # Directories to remove by `dbt clean`
   - "target"
   - "dbt_modules"
 
-
 # Configuring models
-# Full documentation: https://docs.getdbt.com/docs/configuring-models
-
-# In dbt, the default materialization for a model is a view. This means, when you run 
-# dbt run or dbt build, all of your models will be built as a view in your data platform. 
-# The configuration below will override this setting for models in the example folder to 
-# instead be materialized as tables. Any models you add to the root of the models folder will 
-# continue to be built as views. These settings can be overridden in the individual model files
-# using the `{{ config(...) }}` macro.
-
 models:
   airbnb:
     staging:
       schema: staging
       snowflake_Warehouse: COMPUTE_WH
-      materialized: view
-    prod:
-      schema: prod
+      materialized: view  # Materialize staging models as views
+    core:
+      schema: core
       snowflake_Warehouse: COMPUTE_WH
-      materialized: table
+      materialized: table  # Materialize core models as tables

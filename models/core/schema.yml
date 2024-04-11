@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: core
+    description: destination for Airbnb data
+    database: AIRBNB
+    schema: AIRBNB
+    tables:
+      - name: "airbnb_fact"
+        description: Airbnb data for fact table

@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: staging
+    description: Source for Airbnb data
+    database: AIRBNB
+    schema: AIRBNB
+    tables:
+      - name: "airbnb_amsterdam"
+        description: Airbnb data for Amsterdam
+      - name: "airbnb_athens"
+        description: Airbnb data for Athens
+      - name: "airbnb_barcelona"
+        description: Airbnb data for Barcelona
+      - name: "airbnb_berlin"
+        description: Airbnb data for Berlin
+      - name: "airbnb_budapest"
+        description: Airbnb data for Budapest
+      - name: "airbnb_lisbon"
+        description: Airbnb data for Lisbon
+      - name: "airbnb_london"
+        description: Airbnb data for London
+      - name: "airbnb_paris"
+        description: Airbnb data for Pariss
+      - name: "airbnb_rome"
+        description: Airbnb data for Rome
+      - name: "airbnb_vienna"
+        description: Airbnb data for Vienna
+        
+
+
+        
