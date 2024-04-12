@@ -15,7 +15,7 @@ WITH weekdays AS (
     "metro_dist"                  AS metro_distance,
     "lng"                         AS longitude,
     "lat"                         AS latitude,
-    'Amsterdam'                   AS city,
+    'paris'                   AS city,
      FALSE                        AS is_weekend,
   FROM AIRBNB.AIRBNB."airbnb_paris"
 ),
