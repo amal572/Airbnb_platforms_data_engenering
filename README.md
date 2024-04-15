@@ -6,3 +6,23 @@ There will be one running pipeline (DAG):
 <li> Weekly_DAG: this DAG will run weekly to extract new data starting from the installation time. </li>
 
 ### Data schema
+
+| Column | Type | 
+|--------|-------------|
+| realSum |  FloatType |
+| room_type | StringType |
+| is_shared_room | BooleanType |
+| is_private_room | BooleanType |
+| person_capacity | IntegerType  |
+| is_superhost | BooleanType |
+| is_multi_rooms | BooleanType |
+| is_business | BooleanType |
+| bedrooms | IntegerType |
+| person_capacity | IntegerType |
+| cleanliness_rating | IntegerType |
+| guest_satisfaction_rating | IntegerType |
+| central_distance | FloatType |
+| metro_distance | FloatType |
+| longitude | FloatType |
+| latitude | FloatType |
+| city | StringType |
