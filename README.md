@@ -95,5 +95,5 @@ You can download the dashboard and try it using Power BI by using this file
 8. Check your Snowflake schema; you will find a new database with fact and dimension tables. Then check the job; you can find it, just run it and verify if everything works.
 
 9. Connect Snowflake with Power BI following these steps:
-   ![ForwardPort](https://learn.microsoft.com/en-us/power-bi/connect-data/service-connect-snowflake)
+   ![file](https://learn.microsoft.com/en-us/power-bi/connect-data/service-connect-snowflake)
     
