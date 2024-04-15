@@ -26,3 +26,6 @@ There will be one running pipeline (DAG):
 | longitude | FloatType |
 | latitude | FloatType |
 | city | StringType |
+
+### Data Pipeline
+![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Airbnb_Pipline_final.gif)
