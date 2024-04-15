@@ -73,46 +73,27 @@ You can download the dashboard and try it using Power BI by using this file
 
 
 ## Setup
-1. Setup your google cloud project and service account [step1](setup/gcp_account.md)
-2. install terraform on your local machine [step2](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_1_basics_n_setup/1_terraform_gcp)
-3. Setup terraform to create pipeline required infrastructure [step3](setup/terraform_vm.md)
-4. SSH to your google compute engine VM [step4](setup/gcp_vm.md)
-5. Clone the repo to your google compute engine VM
+1. create an account in Snowflake [step1](https://www.snowflake.com/)
+2. create an account in dbt Cloud [step2](https://www.getdbt.com/)
+3. Clone the repo to your Google Compute engine VM
     ```bash
-    git clone https://github.com/AliaHa3/data-engineering-zoomcamp-project.git
+    git clone https://github.com/amal572/Airbnb_platforms_data_engenering.git
     ```
-6. Setup Anaconda + docker  + docker-compose
+4. Setup docker  + docker-compose with all services 
      ```bash
-    cd data-engineering-zoomcamp-project
-    bash scripts/vm_setup.sh
+    cd Airbnb_platforms_data_engenering
+    docker compose up
     ```
-7. Update the enviroment variables in below file with your specific project_id and buckets
-    ```bash
-    cat data-engineering-zoomcamp-project/scripts/setup_config.sh
-    ```
-8. Setup pipeline docker image (airflow+spark)
+5. run the mega Navigate to http://localhost:6789 in your browser and run the last pipeline after changing the config.io with your username, password, service name
+
+6. check your data warehouse in Snowflake and push the project to your GitHub 
+   
+7. open your account in dbt cloud and clone your repository on it then run
      ```bash
-    cd data-engineering-zoomcamp-project
-    bash scripts/airflow_startup.sh
+        dbt build
     ```
-9. in Visual Studio code click on ports and forward port 8080<br>
-  ![ForwardPort](https://user-images.githubusercontent.com/7443591/160403735-7c40babc-7d63-4b51-90da-c065e5b254a0.png)
+8. Check your Snowflake schema; you will find a new database with fact and dimension tables. Then check the job; you can find it, just run it and verify if everything works.
 
-go to localhost:8080<br>
-  
-and login with (airflow:airflow) for the credentials<br>
-![AirflowLogin](https://user-images.githubusercontent.com/7443591/160413081-4f4e606f-09f6-4d4f-9b94-5241f37091a6.png)
-
-9. Enable the historical_DAG and you should see it run. It takes 10-15 minutres to finish
-10. Enable the hourly_DAG
-11. You can check your data in bigquery tables.
-12. if you want to stop docker image you can run below command
-    ```bash
-    cd data-engineering-zoomcamp-project
-    bash scripts/airflow_stop.sh
-    ```
-    or to delete and clean all docker image related file
-    ```bash
-    cd data-engineering-zoomcamp-project
-    bash scripts/airflow_clear.sh
-    ```
+9. Connect Snowflake with Power BI following these steps:
+   ![ForwardPort](https://learn.microsoft.com/en-us/power-bi/connect-data/service-connect-snowflake)
+    
