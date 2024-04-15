@@ -36,14 +36,14 @@ There will be one running pipeline (DAG):
 
 - Cloud - [**Snowflake**](https://www.snowflake.com/)
 - Containerization - [**Docker**](https://www.docker.com), [**Docker Compose**](https://docs.docker.com/compose/)
-- Workflow Orchestration - [**mega magic**](https://docs.mage.ai/)
+- Workflow Orchestration - [**mage magic**](https://docs.mage.ai/)
 - data loaded - [**DBT Cloud**](https://www.getdbt.com/)
 - Data Warehouse - [**Snowflake**](https://www.snowflake.com/)
 - Data Visualization - [**Power BI**](https://www.microsoft.com/en-us/power-platform/products/power-bi)
 - Language - [**Python**](https://www.python.org)
 
 
-## Data Ingestion: Batch Processing with Mega
+## Data Ingestion: Batch Processing with Mage
 ![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/data-source/Mega_Pipline.PNG)
 <li>Data Loader: Fetch data from the Kaggle URL and merge the two CSV files for each city (weekends, weekdays) into one CSV file.</li>
 <li>Transformer: Change the data type and perform data cleaning on a column, for example, by handling null values.</li>
@@ -75,7 +75,7 @@ You can download the dashboard and try it using Power BI by using this file
 ## Setup
 1. create an account in Snowflake [step1](https://www.snowflake.com/)
 2. create an account in dbt Cloud [step2](https://www.getdbt.com/)
-3. Clone the repo to your Google Compute engine VM
+3. Clone the repo to your Google Compute Engine VM
     ```bash
     git clone https://github.com/amal572/Airbnb_platforms_data_engenering.git
     ```
