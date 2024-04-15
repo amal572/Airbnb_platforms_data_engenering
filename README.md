@@ -31,3 +31,9 @@ There will be one running pipeline (DAG):
 
 ### Data Pipeline
 ![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Airbnb_Pipline_final.gif)
+
+
+## Data Ingestion: Batch Processing with Mega
+![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/data-source/Mega_Pipline.PNG)
+<li>Data Loader: Fetch data from the Kaggle URL and merge the two CSV files for each city (weekends, weekdays)</li>
+<li>Transformer: change the data type and make the data cleaning </li>
