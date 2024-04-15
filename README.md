@@ -66,3 +66,7 @@ You can determine the average listing price by city and room type, as well as th
 Also, you can filter by specifics such as city or room type.
 
 ![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Filter.PNG)
+
+You can download the dashboard and try it using Power BI by using this file
+
+![file](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Airbnb_Dashboard.pbix)
