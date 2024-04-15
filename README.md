@@ -96,4 +96,8 @@ You can download the dashboard and try it using Power BI by using this file
 
 9. Connect Snowflake with Power BI following these steps:
    ![file](https://learn.microsoft.com/en-us/power-bi/connect-data/service-connect-snowflake)
+
+## Reference
+[DataTalks Club](https://datatalks.club/)<br>
+[Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp#week-1-introduction--prerequisites)<br>
     
