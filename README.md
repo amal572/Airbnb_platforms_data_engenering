@@ -35,5 +35,17 @@ There will be one running pipeline (DAG):
 
 ## Data Ingestion: Batch Processing with Mega
 ![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/data-source/Mega_Pipline.PNG)
-<li>Data Loader: Fetch data from the Kaggle URL and merge the two CSV files for each city (weekends, weekdays)</li>
-<li>Transformer: change the data type and make the data cleaning </li>
+<li>Data Loader: Fetch data from the Kaggle URL and merge the two CSV files for each city (weekends, weekdays) into one CSV file.</li>
+<li>Transformer: Change the data type and perform data cleaning on a column, for example, by handling null values.</li>
+<li>Load Data: Create a Data Warehouse after the last processing and save it in the Snowflake cloud.</li>
+
+
+## Technologies and Tools
+
+- Cloud - [**Snowflake**](https://www.snowflake.com/)
+- Containerization - [**Docker**](https://www.docker.com), [**Docker Compose**](https://docs.docker.com/compose/)
+- Workflow Orchestration - [**mega magic**](https://docs.mage.ai/)
+- data loaded - [**DBT Cloud**](https://www.getdbt.com/)
+- Data Warehouse - [**Snowflake**](https://www.snowflake.com/)
+- Data Visualization - [**Power BI**](https://www.microsoft.com/en-us/power-platform/products/power-bi)
+- Language - [**Python**](https://www.python.org)
