@@ -70,3 +70,49 @@ Also, you can filter by specifics such as city or room type.
 You can download the dashboard and try it using Power BI by using this file
 
 ![file](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Airbnb_Dashboard.pbix)
+
+
+## Setup
+1. Setup your google cloud project and service account [step1](setup/gcp_account.md)
+2. install terraform on your local machine [step2](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/week_1_basics_n_setup/1_terraform_gcp)
+3. Setup terraform to create pipeline required infrastructure [step3](setup/terraform_vm.md)
+4. SSH to your google compute engine VM [step4](setup/gcp_vm.md)
+5. Clone the repo to your google compute engine VM
+    ```bash
+    git clone https://github.com/AliaHa3/data-engineering-zoomcamp-project.git
+    ```
+6. Setup Anaconda + docker  + docker-compose
+     ```bash
+    cd data-engineering-zoomcamp-project
+    bash scripts/vm_setup.sh
+    ```
+7. Update the enviroment variables in below file with your specific project_id and buckets
+    ```bash
+    cat data-engineering-zoomcamp-project/scripts/setup_config.sh
+    ```
+8. Setup pipeline docker image (airflow+spark)
+     ```bash
+    cd data-engineering-zoomcamp-project
+    bash scripts/airflow_startup.sh
+    ```
+9. in Visual Studio code click on ports and forward port 8080<br>
+  ![ForwardPort](https://user-images.githubusercontent.com/7443591/160403735-7c40babc-7d63-4b51-90da-c065e5b254a0.png)
+
+go to localhost:8080<br>
+  
+and login with (airflow:airflow) for the credentials<br>
+![AirflowLogin](https://user-images.githubusercontent.com/7443591/160413081-4f4e606f-09f6-4d4f-9b94-5241f37091a6.png)
+
+9. Enable the historical_DAG and you should see it run. It takes 10-15 minutres to finish
+10. Enable the hourly_DAG
+11. You can check your data in bigquery tables.
+12. if you want to stop docker image you can run below command
+    ```bash
+    cd data-engineering-zoomcamp-project
+    bash scripts/airflow_stop.sh
+    ```
+    or to delete and clean all docker image related file
+    ```bash
+    cd data-engineering-zoomcamp-project
+    bash scripts/airflow_clear.sh
+    ```
