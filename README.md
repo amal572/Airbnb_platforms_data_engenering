@@ -55,8 +55,9 @@ After transforming and loading the data into Snowflake using Mega pipelines, we 
 
 ## Analytics Dashboard
 Some screenshots from the dashboards to get you the full knowledge:
-<li>This dashboard compares the total listings for weekends and weekdays, depending on the city and the type of room. </li>
+##### This dashboard compares the total listings for weekends and weekdays, depending on the city and the type of room. 
 ![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Dashboard1.PNG)
-<li> You can determine the average listing price by city and room type, as well as the distance between the city and the metro, and between the city and downtown.</li>
+
+##### You can determine the average listing price by city and room type, as well as the distance between the city and the metro, and between the city and downtown.
 ![image](https://github.com/amal572/Airbnb_platforms_data_engenering/blob/main/Dashboard2.PNG)
 
